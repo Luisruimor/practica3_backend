@@ -11,7 +11,7 @@ app
     .get("/disco/:id",findDiscoId)
     .get("/discos/nombre/:nombre",findDiscoName)
     .get("/discos/formato/:formato",findDiscoFormato)
-    //.get("/discos/pais/:pais",findDiscoPais)
+    .get("/discos/pais/:pais",findDiscoPais)
     .post("/addDisco/:name/:autor/:formato/:matriz/:pais/:id",postAddDisco)
     //.put("/updateDisco/:id/:param/:value",putDisco)
     //.delete("/deleteDisco/:id",deleteDisco)
