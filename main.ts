@@ -12,7 +12,7 @@ app
     .get("/discos/nombre/:nombre",findDiscoName)
     .get("/discos/formato/:formato",findDiscoFormato)
     .get("/discos/pais/:pais",findDiscoPais)
-    .post("/addDisco/:nombre/:autor/:formato/:matriz/:pais/:id",postAddDisco)
+    .post("/addDisco/:nombre/:autor/:formato/:matriz/:pais",postAddDisco)
     .put("/updateDisco/:id/:nombre/:autor/:formato/:matriz/:pais",putDisco)
     .delete("/deleteDisco/:id",deleteDisco)
 

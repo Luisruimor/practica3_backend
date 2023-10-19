@@ -8,5 +8,4 @@ export type DiscoSchema = Omit<Disco, "id"> & {
     formato:string,
     matriz:boolean,
     pais:string,
-    id:number
 };

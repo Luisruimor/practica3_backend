@@ -1,3 +1,4 @@
+import { ObjectId } from "mongo";
 import { discosCollection } from "../db/mongo.ts";
 import {DiscoSchema} from "../db/schema.ts";
 
@@ -7,7 +8,7 @@ export const allDiscos = async (req:Request, res:Response) => {
 }
 
 export const findDiscoId = async (req:Request, res:Response) => {
-    const discoId = await discosCollection.findOne({ id: req.params.id });
+    const discoId = await discosCollection.findOne({ _id: new ObjectId(req.params.id) });
     discoId ? res.send(discoId):res.send("Error al obtener el disco")
 }
 

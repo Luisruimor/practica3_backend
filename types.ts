@@ -4,7 +4,6 @@ export type Disco = {
     formato:Formato,
     matriz:boolean,
     pais:string,
-    id:number
 }
 
 enum Formato {
