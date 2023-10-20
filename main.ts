@@ -6,13 +6,15 @@ import {putDisco} from "./resolvers/put.ts";
 
 const app = express();
 
+app.use(express.json());
+
 app
     .get("/discos", allDiscos)
     .get("/disco/:id",findDiscoId)
     .get("/discos/nombre/:nombre",findDiscoName)
     .get("/discos/formato/:formato",findDiscoFormato)
     .get("/discos/pais/:pais",findDiscoPais)
-    .post("/addDisco/:nombre/:autor/:formato/:matriz/:pais",postAddDisco)
+    .post("/addDisco",postAddDisco)
     .put("/updateDisco/:id/:nombre/:autor/:formato/:matriz/:pais",putDisco)
     .delete("/deleteDisco/:id",deleteDisco)
 
