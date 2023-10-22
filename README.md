@@ -1,8 +1,11 @@
-# practica3_backend
-Crear un API para el guardado de discos de música.
+# Práctica 3 de Backend
 
-De cada disco se guardarán los siguientes datos:
+1. [Enunciado](#enunciado)
+2. [Documentación API](#docu-api)
+3. [¿Qué he aprendido?](#dd)
 
+## Enunciado
+Crear un API para el guardado de discos de música.  De cada disco se guardarán los siguientes datos:
 - Nombre
 - Autor
 - Formato (LP, CD, single, cassette, reel to reel, minidisc, videocd ...)
@@ -10,10 +13,9 @@ De cada disco se guardarán los siguientes datos:
 - País de impresión
 - Arte de portada
 - id
-
 El api deberá de poseer las siguientes llamadas:
 
-GET ->
+### GET
 
 - Obtener todos los discos existentes
 - Obtener un disco mediante id
@@ -21,21 +23,21 @@ GET ->
 - Obtener listado de discos según formato
 - Obtener listado de discos según país de impresión
 
-POST ->
+### POST
 
 - Crear nuevo disco
 
-PUT ->
+### PUT
 
 - Actualizar un disco existente indicándolo por su id
 
-DELETE ->
+### DELETE
 
 - Eliminar un disco mediante su id
 
 ----------------------------------------------------------------------------------------------------------------------
 
-En el repositorio el readme deberá funcionar como documentación del API indicando todos los endpoints y parámetros necesarios para su uso.
+En el repositorio el readme deberá funcionar como documentación del API indicando todos los endpoints y parámetros necesarios para su uso. [Documentación API](#docu-api)
 
 Creando el api con exclusivamente datos locales se podrá llegar a la nota máxima de 6.
 
@@ -51,3 +53,7 @@ El trabajo será exclusivamente individual sin permitir hacer parejas o entregas
 La entrega se hará en una release de GitHub en un repositorio antes de este miércoles 26 de octube a las 18:00, un trabajo que no cumpla esta cláusulas de entrega será evaluado automáticamente con un 0.
 
 En caso de obtar a la nota máxima se deberá envíar también el enlace del despliegue en deno deploy.
+
+## Docu API
+
+### dd
