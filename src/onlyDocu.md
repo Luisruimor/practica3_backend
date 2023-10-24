@@ -22,7 +22,7 @@ Puedes pedir todos los discos con la url: `/disco`
 
 
 ## GET un disco
-Puedes pedir un único disco añadiendo su `_id` a la url como parámetro: `/disco/_id`
+Puedes pedir un único disco añadiendo su `_id` a la url como parámetro: `/disco/:_id`
 
 `GET https://practica3.deno.dev/6537976d41d7832e800d2b11`
 
