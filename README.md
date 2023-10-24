@@ -2,7 +2,7 @@
 
 He creado un archivo para que puedas importar la colección de endpoints en postman. 
 
-#### [**ARCHIVO**](src/postman/práctica3_discosAPI.postman_collection.json)
+#### [**ARCHIVO**](src/postman/practica3_discosAPI.postman_collection.json)
 
 # Práctica 3 de Backend
 
