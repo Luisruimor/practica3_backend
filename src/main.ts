@@ -12,7 +12,7 @@ app.use(express.json());
 app
     .get("", (req:Request, res:Response) =>{
         const decoder = new TextDecoder("utf-8");
-        const markdown = Deno.readTextFileSync('onlyDocu.md');
+        const markdown = Deno.readTextFileSync('src/onlyDocu.md');
         const html = marked(markdown);
         res.send(html);
     })
