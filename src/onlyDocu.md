@@ -1,7 +1,7 @@
 # Docu API
 Bienvenido a nuestra API de Discos de Música, diseñada para almacenar y gestionar tu colección de discos. Aquí puedes registrar discos con su nombre, formato, y más. Con funciones CRUD, puedes crear, leer, actualizar o eliminar cualquier disco de tu colección. ¡Empieza a organizar tu música ahora!
 
-**BASE URL**: `https://sweet-amoeba-97.deno.dev`
+**BASE URL**: `https://practica3.deno.dev`
 
 ## Disco Schema
 
@@ -18,13 +18,13 @@ Bienvenido a nuestra API de Discos de Música, diseñada para almacenar y gestio
 ## GET todos los discos
 Puedes pedir todos los discos con la url: `/disco`
 
-`GET https://sweet-amoeba-97.deno.dev/disco`
+`GET https://practica3.deno.dev/disco`
 
 
 ## GET un disco
 Puedes pedir un único disco añadiendo su `_id` a la url como parámetro: `/disco/_id`
 
-`GET https://sweet-amoeba-97.deno.dev/6537976d41d7832e800d2b11`
+`GET https://practica3.deno.dev/6537976d41d7832e800d2b11`
 
 ```` json
 {
@@ -40,7 +40,7 @@ Puedes pedir un único disco añadiendo su `_id` a la url como parámetro: `/dis
 ## GET discos por nombre
 Puedes pedir los discos con un nombre concreto añadiendo el `nombre` a la url como parámetro: `/disco/nombre/:nombre`
 
-`GET https://sweet-amoeba-97.deno.dev/disco/nombre/Dark%20Side%20of%20the%20Moon`
+`GET https://practica3.deno.dev/disco/nombre/Dark%20Side%20of%20the%20Moon`
 
 ```` json
 [
@@ -61,7 +61,7 @@ Puedes pedir los discos con un formato concreto añadiendo el `formato` a la url
 
 Los formatos válidos son: `CD`, `DVD`, `BluRay` y `Vinilo`
 
-`GET https://sweet-amoeba-97.deno.dev/disco/formato/Vinilo`
+`GET https://practica3.deno.dev/disco/formato/Vinilo`
 
 ```` json
 [
@@ -88,7 +88,7 @@ Los formatos válidos son: `CD`, `DVD`, `BluRay` y `Vinilo`
 ## GET discos por país
 Puedes pedir los discos con un país concreto añadiendo `pais` a la url como parámetro: `/disco/pais/:pais`
 
-`GET http://localhost:3000/disco/pais/España`
+`GET https://practica3.deno.dev/disco/pais/España`
 
 ```` json
 [
@@ -115,7 +115,7 @@ Puedes pedir los discos con un país concreto añadiendo `pais` a la url como pa
 ## POST nuevo disco
 Puedes crear un nuevo disco enviando un json con los datos del disco a la url: `/addDisco`
 
-`POST https://sweet-amoeba-97.deno.dev/addDisco` y añadir un cuerpo con estas características:
+`POST https://practica3.deno.dev/addDisco` y añadir un cuerpo con estas características:
 ````json
 {
     "nombre": "Más",
@@ -132,7 +132,7 @@ Si se ha añadido correctamente deberá devolver: `Disco insertado con id : xxxx
 ## DELETE eliminar disco
 Puedes eliminar un disco enviando su `_id` a la url: `/deleteDisco/:_id`
 
-`DELETE https://sweet-amoeba-97.deno.dev/deleteDisco/6530fdc36770dc41ec1afc45`
+`DELETE https://practica3.deno.dev/deleteDisco/6530fdc36770dc41ec1afc45`
 
 Si se ha eliminado correctamente deberá devolver: `Se ha borrado correctamente`
 
