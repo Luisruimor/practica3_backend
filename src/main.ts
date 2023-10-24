@@ -17,12 +17,12 @@ app
         res.send(html);
     })
     .get("/disco", allDiscos)
-    .get("/disco/:id",findDiscoId)
+    .get("/disco/:_id",findDiscoId)
     .get("/disco/nombre/:nombre",findDiscoName)
     .get("/disco/formato/:formato",findDiscoFormato)
     .get("/disco/pais/:pais",findDiscoPais)
     .post("/addDisco",postAddDisco)
-    .put("/updateDisco/:id/:nombre/:autor/:formato/:matriz/:pais",putDisco)
-    .delete("/deleteDisco/:id",deleteDisco)
+    .put("/updateDisco/:_id",putDisco)
+    .delete("/deleteDisco/:_id",deleteDisco)
 
 app.listen(3000);

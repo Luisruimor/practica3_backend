@@ -156,7 +156,7 @@ Puedes pedir los discos con un país concreto añadiendo `pais` a la url como pa
 ### POST nuevo disco
 Puedes crear un nuevo disco enviando un json con los datos del disco a la url: `/addDisco`
 
-`POST https://practica3.deno.dev/addDisco` y añadir un cuerpo con estas características:
+`POST https://practica3.deno.dev/addDisco` y añadir un cuerpo json con estas características:
 ````json
 {
     "nombre": "Más",
@@ -169,6 +169,19 @@ Puedes crear un nuevo disco enviando un json con los datos del disco a la url: `
 Si se ha añadido correctamente deberá devolver: `Disco insertado con id : xxxxxxxxxxxxxxxxxxxxxx`
 
 ### PUT actualizar disco
+Puedes actualizar un disco enviando un json con los datos del disco a la url y pasando el `_id` como parámetro a la url: `/updateDisco/:_id`
+
+`PUT https://practica3.deno.dev/updateDisco/6530fdc36770dc41ec1afc45` y enviar un cuerpo en json:
+
+````json
+{
+    "nombre": "Más",
+    "autor": "Alejandro Sanz",
+    "formato": "DVD",
+    "matriz": false,
+    "pais": "España"
+}
+````
 
 ### DELETE eliminar disco
 Puedes eliminar un disco enviando su `_id` a la url: `/deleteDisco/:_id`
