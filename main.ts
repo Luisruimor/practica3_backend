@@ -9,11 +9,11 @@ const app = express();
 app.use(express.json());
 
 app
-    .get("/discos", allDiscos)
+    .get("/disco", allDiscos)
     .get("/disco/:id",findDiscoId)
-    .get("/discos/nombre/:nombre",findDiscoName)
-    .get("/discos/formato/:formato",findDiscoFormato)
-    .get("/discos/pais/:pais",findDiscoPais)
+    .get("/disco/nombre/:nombre",findDiscoName)
+    .get("/disco/formato/:formato",findDiscoFormato)
+    .get("/disco/pais/:pais",findDiscoPais)
     .post("/addDisco",postAddDisco)
     .put("/updateDisco/:id/:nombre/:autor/:formato/:matriz/:pais",putDisco)
     .delete("/deleteDisco/:id",deleteDisco)

@@ -9,6 +9,6 @@ export type Disco = {
 enum Formato {
     CD = "CD",
     DVD = "DVD",
-    BlueRay = "BlueRay",
+    BluRay = "BluRay",
     Vinilo = "Vinilo"
 }
